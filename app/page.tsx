@@ -3,6 +3,8 @@ import Grid from '@/components/Grid';
 import { FloatingNav } from '@/components/ui/FloatingNav';
 import { FaHome, FaUser } from 'react-icons/fa';
 import RecentProjects from '@/components/RecentProjects';
+import Experience from '@/components/Experience';
+import Footer from '@/components/Footer';
 export default function Home() {
   const navItems = [
     {
@@ -11,7 +13,7 @@ export default function Home() {
       icon: <FaHome />,
     },
     { name: 'Projects', link: '/#project', icon: <FaUser /> },
-    { name: 'Testimonials', link: '/#testimonials', icon: <FaUser /> },
+    { name: 'Experience', link: '/#experience', icon: <FaUser /> },
     {
       name: 'Contact',
       link: '/#contact',
@@ -25,6 +27,8 @@ export default function Home() {
         <Hero />
         <Grid />
         <RecentProjects />
+        <Experience />
+        <Footer/>
       </div>
     </main>
   );

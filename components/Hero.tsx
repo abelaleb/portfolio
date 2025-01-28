@@ -3,7 +3,6 @@ import { FaLocationArrow } from 'react-icons/fa6';
 import MagicButton from './MagicButton';
 import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
-
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
@@ -28,23 +27,29 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center relative my-20 z-10 text-white ">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
-          </p>
+          {/* <div className="flex items-center ">
+            Helloooo!
+            <img
+              src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExODFxMTU3ZnRnYXh3cjZ4c2c4a2s5b2owZ2lmb3QycHZ3cWRlNzB4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lcySndwSDLxC4eOU86/giphy.gif"
+              alt="Welcome GIF"
+              className="w-[50px]"
+            />
+          </div> */}
+
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Hi! I'm Abel Alebachew, a Web developer based in Addis Ababa, Ethiopia."
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white-100">
-            Hi! I&apos;m Abel, a Next.js Developer based in Ethiopia.
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            I Love Transforming Ideas into Interactive Digital Experiences
           </p>
 
           <a href="#about">
             <MagicButton
-              title="Show my work"
+              title="Take a peek"
               icon={<FaLocationArrow />}
               position="right"
             />

@@ -1,14 +1,14 @@
 'use client';
 
 import { FaLocationArrow } from 'react-icons/fa6';
-import bgImg from '@/public/bg.png';
+
 import { projects } from '@/data';
 import { PinContainer } from './ui/Pin';
+import bgImg from '@/public/bg.png';
 import Image from 'next/image';
-
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <div className="py-20 " id="project">
       <h1 className="heading text-white">
         A small selection of{' '}
         <span className="text-purple">recent projects</span>
@@ -20,27 +20,22 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
-              className='text-white'
+              // title="/ui.aceternity.com"mannupaaji
+              href="https://twitter.com/"
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10 ">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: '#13162D' }}
                 >
-                  <Image 
-                    src={bgImg} 
-                    alt="bgimg" 
-                    className="w-full h-full object-cover"
-                  />
+                  <Image src={bgImg} alt="bgimg" width={500} height={500} />
                 </div>
                 <Image
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0 w-auto h-auto"
+                  className="z-10 absolute bottom-0 w-full h-full"
                   width={500}
-                  height={300}
+                  height={500}
                 />
               </div>
 
@@ -58,7 +53,7 @@ const RecentProjects = () => {
                 {item.des}
               </p>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
+              <div className="flex items-center justify-between mt-7 sm:m-0 mb-3">
                 <div className="flex items-center">
                   {item.iconLists.map((icon, index) => (
                     <div
@@ -68,19 +63,22 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <Image 
-                        src={icon} 
-                        alt={`tech-icon-${index}`}
-                        className="p-2 w-full h-full" 
-                        width={40}
-                        height={40}
+                      <Image
+                        src={icon}
+                        alt="icon5"
+                        className="p-2"
+                        width={500}
+                        height={500}
                       />
                     </div>
                   ))}
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                  <p
+                    className="flex lg:text-xl md:text-xs text-sm text-purple"
+                    onClick={() => console.log('hi')}
+                  >
                     Check Live Site
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
