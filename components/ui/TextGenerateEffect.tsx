@@ -35,7 +35,7 @@ export const TextGenerateEffect = ({
               className={` ${
                 idx > 4 && idx < 7
                   ? 'text-purple'
-                  : 'dark:text-black/.9 text-black'
+                  : 'dark:text-white/.9 text-white'
               } opacity-0`}
             >
               {word}{' '}
