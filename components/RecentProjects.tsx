@@ -6,10 +6,11 @@ import { projects } from '@/data';
 import { PinContainer } from './ui/Pin';
 import bgImg from '@/public/bg.png';
 import Image from 'next/image';
+
 const RecentProjects = () => {
   return (
-    <div className="py-20 " id="project">
-      <h1 className="heading text-white">
+    <div className="py-20 sm:px-10 px-5 mx-auto" id="project">
+      <h1 className="heading text-black">
         A small selection of{' '}
         <span className="text-purple">recent projects</span>
       </h1>
@@ -20,7 +21,7 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer
-              // title="/ui.aceternity.com"mannupaaji
+             title='abel'
               href="https://twitter.com/"
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10 ">
