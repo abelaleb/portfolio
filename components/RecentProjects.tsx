@@ -6,11 +6,12 @@ import { projects } from '@/data';
 import { PinContainer } from './ui/Pin';
 import bgImg from '@/public/bg.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const RecentProjects = () => {
   return (
-    <div className="py-20 sm:px-10 px-5 mx-auto" id="project">
-      <h1 className="heading text-black">
+    <div className="py-20 sm:px-10 px-5 mx-auto bg-[#0d1c22]" id="project">
+      <h1 className="heading text-white">
         A small selection of{' '}
         <span className="text-purple">recent projects</span>
       </h1>
@@ -21,13 +22,13 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer
-             title='abel'
-              href="https://twitter.com/"
+             title={item.title}
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10 ">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: '#13162D' }}
+                  // style={{ backgroundColor: '#13162D' }}
+                  style={{ backgroundColor: 'white' }}
                 >
                   <Image src={bgImg} alt="bgimg" width={500} height={500} />
                 </div>
@@ -40,7 +41,7 @@ const RecentProjects = () => {
                 />
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 text-white">
                 {item.title}
               </h1>
 
@@ -76,12 +77,14 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p
+                  <Link
                     className="flex lg:text-xl md:text-xs text-sm text-purple"
-                    onClick={() => console.log('hi')}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Check Live Site
-                  </p>
+                  </Link>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>

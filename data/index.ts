@@ -71,10 +71,18 @@ export const gridItems = [
 
 export const projects = [
   {
+    id: 4,
+    title: "Cinema App",
+    des: "Browse movies, TV shows, and actors using a React, TypeScript, and Tailwind CSS stack.",
+    img: "/cineatlas.png",
+    iconLists: ["/re.svg", "/ts.svg", "/tail.svg"],
+    link: "https://github.com/abelaleb/CineAtlas",
+  },
+  {
     id: 1,
     title: "Travel Log",
     des: "A Full-Stack MERN app for documenting travel experiences with map-based location selection and interactive markers.",
-    img: "/p1.svg",
+    img: "/d.svg",
     imgClassName: "w-full h-full",
     iconLists: ["/re.svg", "/node.svg", "/mongo.svg", "/tail.svg", "/ts.svg"],
     link: "https://github.com/abelaleb/travel-log",
@@ -83,36 +91,33 @@ export const projects = [
     id: 2,
     title: "CV Maker",
     des: "A React web app designed to create professional resumes with a user-friendly interface.",
-    img: "/p2.svg",
+    img: "/cv-maker.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-    // link: "https://github.com/abelaleb/CV-Builder",
     link: "https://cv-builder-ruddy.vercel.app/"
   },
   {
     id: 3,
     title: "Todo App",
     des: "A feature-rich To-Do List app using HTML, CSS, and JavaScript with local storage for data persistence.",
-    img: "/p3.svg",
+    img: "/todos.png",
     iconLists: ["/html.svg", "/css.svg", "/js.svg"],
-    // link: "https://github.com/abelaleb/Todo-List",
     link:"https://abelaleb.github.io/Todo-List/"
-  },
-  {
-    id: 4,
-    title: "Cinema App",
-    des: "Browse movies, TV shows, and actors using a React, TypeScript, and Tailwind CSS stack.",
-    img: "/p4.svg",
-    iconLists: ["/re.svg", "/ts.svg", "/tail.svg"],
-    link: "https://github.com/abelaleb/CineAtlas",
   },
 ];
 
 export const companies = [
+  
   {
     id: 1,
     name: "Azure",
     img: "/azure.svg",
     nameImg: "/azureName.svg",
+  },
+  {
+    id: 4,
+    name: "GitHub",
+    img: "/github.svg",
+    nameImg: "/githubName.svg",
   },
   {
     id: 2,
@@ -126,19 +131,13 @@ export const companies = [
     img: "/mongo.svg",
     nameImg: "/mongoName.svg",
   },
-  {
-    id: 4,
-    name: "GitHub",
-    img: "/github.svg",
-    nameImg: "/githubName.svg",
-  },
 ];
 
 export const workExperience = [
   {
     id: 1,
     title: "Open-Source Front-End Developer",
-    desc: "Contributed to open-source projects with a focus on user-friendly front-end development using React, HTML, CSS, and Tailwind CSS.",
+    desc: "Contributed to versewise, an open-source project with a focus on user-friendly front-end development using React, HTML, CSS, and Tailwind CSS.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
@@ -163,6 +162,10 @@ export const socialMedia = [
     id: 1,
     img: "/git.svg",
     link: "https://github.com/abelaleb",
+  },
+  {id:4,
+    img:"/telegram.svg",
+    link:"https://t.me/abel_aleb"
   },
   {
     id: 2,
