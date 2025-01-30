@@ -1,5 +1,6 @@
 "use client"
 import { FaLocationArrow } from 'react-icons/fa6';
+import Link from 'next/link';
 
 import MagicButton from './MagicButton';
 import { Spotlight } from './ui/Spotlight';
@@ -51,13 +52,15 @@ const Hero = () => {
             I Love Transforming Ideas into Interactive Digital Experiences
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Take a peek"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <Link href="/path/to/your/cv.pdf" passHref>
+            <a download>
+              <MagicButton
+                title="Download my cv"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </Link>
         </div>
       </div>
     </div>
