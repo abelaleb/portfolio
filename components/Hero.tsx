@@ -52,14 +52,12 @@ const Hero = () => {
             I Love Transforming Ideas into Interactive Digital Experiences
           </p>
 
-          <Link href="/path/to/your/cv.pdf" passHref>
-            <a download>
-              <MagicButton
-                title="Download my cv"
-                icon={<FaLocationArrow />}
-                position="right"
-              />
-            </a>
+          <Link href="/Abel-Alebachew-Resume.pdf" download>
+            <MagicButton
+              title="Download my cv"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
           </Link>
         </div>
       </div>
